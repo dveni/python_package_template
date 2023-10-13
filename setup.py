@@ -11,7 +11,7 @@ URL = 'https://github.com/dveni/python_package_template'
 EMAIL = 'me@example.com'
 AUTHOR = 'Daniel Vera Nieto'
 REQUIRES_PYTHON = '>=3.12.0'
-VERSION = '0.1.0'
+VERSION = None
 
 # What packages are required for this module to be executed?
 REQUIRED = [
@@ -63,4 +63,9 @@ setup(
     python_requires=REQUIRES_PYTHON,
     install_requires=REQUIRED,
     extra_require=EXTRAS,
+    entry_points="""
+        [console_scripts]
+        mypackage = package_name.module:print_hello
+        """,
+
 )
