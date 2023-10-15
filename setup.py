@@ -20,6 +20,7 @@ REQUIRED = [
 
 # What packages are optional?
 EXTRAS = {
+    'jsonargparse'
     # 'fancy feature': ['django'],
 }
 
