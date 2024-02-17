@@ -5,7 +5,7 @@ import os
 from distutils.core import setup
 
 # Package meta-data.
-NAME = 'mypackage'
+NAME = 'package_name'
 DESCRIPTION = 'My short description for my project.'
 URL = 'https://github.com/dveni/python_package_template'
 EMAIL = 'me@example.com'
@@ -15,13 +15,14 @@ VERSION = None
 
 # What packages are required for this module to be executed?
 REQUIRED = [
-    # 'requests', 'maya', 'records',
+        'jsonargparse',
+        'pre-commit',
 ]
 
 # What packages are optional?
 EXTRAS = {
-    'jsonargparse'
     # 'fancy feature': ['django'],
+    'pytest': ['pytest'],
 }
 
 # The rest you shouldn't have to touch too much :)
